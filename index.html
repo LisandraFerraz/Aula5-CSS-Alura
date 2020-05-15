@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 4 CSS Alura </title>
+    <link rel="stylesheet" type="text/css" href="css/aula5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Jost:wght@300&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Jost:wght@300&family=Source+Code+Pro:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Jost:wght@300&family=Source+Code+Pro:wght@300;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a0aa0b050c.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        <div>
+            <h1 class="site-title">Lisandra Ferraz </h1> 
+            <marquee behavior="alternate" width="470px"><h3 class="site-subtitle">< !--Estudante de Programação--></h3></marquee>
+        </div>
+        </header>
+
+        <section class="sobre" id="sobre">
+            <h2> Sobre </h2>
+
+            <figure>
+                <img src="img/perfil.png" alt="Perfil" class="avatar">
+            </figure>
+
+            <p>Olá, mundo!</p>
+            <p>Meu nome é Lisandra, tenho dezessete anos e atualmente me encaixo no bloco dos estudantes de desenvolvimento de sistemas!   
+            Faço esse curso em uma escola técnica e, durante esse tempo de pandemia, venho tentando aprimorar minhas habilidades de              
+            desenvolvimento e criação com a <a href=https://www.alura.com.br/imersao-css target="_blank"> Alura, no Imersão CSS </a>, tanto com o objetivo de me dar bem na matriz curricular
+            do curso e, mais tarde, no curso superior, quanto também para conhecimento e projetos pessoais; afinal, nunca é demais!</p>
+            <p>Para entrar em contato comigo e conhecer sobre meu trabalho, atente-se nas outras sessões dessa página!</p>
+
+        </section>
+        
+        <section class="portfolio" id="portfolio">          
+            <h2> < class = "Portfólio" ></h2>
+                    <!-- caso diretório=wrong, então: ./img/portifolio.jpg -->
+            <div class="grid">
+                <figure>
+                    <a href="#"><img class="img-portfolio" src="img/ecomer.png" alt="Conheça meu eCommerce!"></a>
+                        <figcaption> < /eCommerce > </figcaption>
+                </figure>
+                <figure>
+                    <a href="#"><img class="img-portfolio" src="img/mobile.png" alt="Projetos Mobile!"></a>
+                        <figcaption> < /Mobile ></figcaption>
+                </figure>
+
+                    <!--trocar br pelo line height no css-->
+                <figure>
+                    <a href="#"> <img class="img-portfolio" src="img/personall.png" alt="Meus Projetos Pessoais"></a>
+                        <figcaption>< /Projetos Pessoais> </figcaption>
+                </figure>
+            </div>   
+        </section>
+        <!--Nova Section para contato-->
+        <section class="contato " id="contato">
+            <h2> < class = "Contato" ></h2>
+            <div class="gridd">
+                    <a target="_blank" href="#"><i class="fab fa-github-alt"></i></a>
+                    <a target="_blank" href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"> <i class="fas fa-mail-bulk"></i> </a>
+                </div>
+        </section>
+    </body>
+</html>

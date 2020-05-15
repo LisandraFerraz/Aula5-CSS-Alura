@@ -1,0 +1,247 @@
+/*IMERSAO CSS*/
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('https://www.publicdomainpictures.net/pictures/130000/velka/gray-top-gradient-background.jpg');
+	background-size: auto 100vh;
+	font-family:courier;
+	background-attachment: fixed;
+	font-size: 12px;	
+}
+
+@media (min-width: 400px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 600px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.site-title, .site-subtitle {
+	color: black;
+	text-align: center;
+	font-family: 'Source Code Pro', courier, monospace;
+	line-height: 2.2em;
+}
+
+a {
+	text-decoration: none;
+	font-family: courier;
+	font-size: 20px;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	width: 110vw;
+	background-color: #de605e; 
+	z-index: 1;
+}
+
+.menu a {
+	display: block;
+	color: white;
+	padding: 20px 20px;
+	text-decoration: none;
+	transition: 0.5s;
+
+}
+
+.menu a:hover {
+	text-decoration: underline;
+	color: black;
+	text-shadow: 10px 5px 10px black;
+	transition: transform 500ms;
+	transform: scale(1.2);
+}
+
+
+.menu ul {
+  display:flex; 
+  justify-content: space-evenly;
+}
+
+.menu li {
+	list-style:none;  	
+ }
+
+ .sobre, .contato, .portfolio {
+	color: black;
+	font-family: monospace;
+	margin-bottom: 1.5em;
+	background-color:#bfbfbf;
+	padding: 2em;
+	margin: 2em;
+ }
+ 
+.sobre .avatar {
+	float: right ;
+	height: 250px;
+	width: 250px;
+	margin-left: 2em;
+	margin-bottom: 5em;
+	clip-path: polygon(0 0, 78% 0, 100% 100%, 0 100%);
+}
+
+@media (min-width: 560px) {
+	.avatar {
+	float: right ;
+	height: 250px;
+	width: 250px;
+	}
+}
+
+ @media (min-width: 880px) {
+	.avatar {
+	float: right ;
+	height: 250px;
+	width: 250px;
+	}
+ }
+
+ .sobre h2 {
+	 font-family: monospace;
+	 color: black;
+
+ }
+ 
+ .sobre a:hover {
+	 color:#d84341;
+	 text-decoration: underline;
+ }
+ 
+ 
+ .sobre a {
+	color:#d84341;
+	text-decoration: blink;
+	font-size: 1em;
+ }
+ 
+ .sobre p {
+	font-size: 1em;
+	text-align: justify;
+	margin-bottom: 1.2em;
+	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
+
+	
+ }
+  @media (min-width: 1200px) {
+	 .container {
+		 max-width: 1200px;
+		 margin-left:auto;
+		 margin-right:auto;
+	 }
+ }
+ 
+.portfolio .grid{
+	 display: grid;
+	 gap: 2em;
+ }
+
+
+ @media (min-width: 560px) {
+	.portfolio .grid {
+	grid-template-columns: 100px 100px;
+	}
+ }
+ 
+ @media (min-width: 880px) {
+	.portfolio .grid {
+		grid-template-columns: repeat(3, 260px);
+		justify-content: center;
+		align-content: center;
+		height: calc(100vh -8em - 48px);
+	}
+ }
+ 
+ .contato a {
+	 font-size: 5em;
+	 color: #df4240;
+	transition: 0.5s;
+ }
+ 
+.contato a:hover {
+	color: black;
+	text-decoration: none;
+	text-shadow: 10px 5px 10px #cc7722;
+	transition: transform 500ms;
+	transform: scale(1.2);
+ }
+
+.contato a:active {
+	color:#cc7722;
+	text-shadow: 10px 5px 10px black;
+}
+
+.contato .gridd {
+		display: grid;
+		gap: 0;
+}
+
+.contato a {
+	text-align: center;
+}
+
+
+@media (min-width: 560px) {
+	.contato .gridd {
+		grid-template-columns: 90px 100px 100px 100px;
+	}
+}
+
+@media (min-width: 880px) {
+	.contato .gridd {
+		grid-template-columns: repeat(4, 180px);
+		justify-content:center;
+		align-content: center;
+		height: calc(100vh - 8em -48px);
+	}
+}
+
+.img-portfolio {
+	height: 240px;
+	width: 280px;
+	transition: 5ms;
+	
+}
+
+.img-portfolio:hover {
+	transition: transform 5ms;
+	transform: scale(-1,1.0) rotate(-2deg);
+	text-shadow: 10px 5px 10px #cc7722;
+}
+
+
+figcaption {
+	font-size: 1.4em;
+}
+
+h2 {
+	text-align: center;
+	line-height: 4em;
+}
